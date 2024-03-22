@@ -241,7 +241,44 @@ header .menu a{
         top: 38%;
     }
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:420px) {
+    .html{
+        overflow: hidden;
+    }
+    header .logo{
+        font-size: 1rem ;
+        margin-left: 1.4rem;
+    }
+    header .menu{
+        margin-right: 1.6rem;
+        gap: 10px;
+        font-size: 13px;
+    }
+    header .menu a{
+        font-weight: 300;
+    }
+    .thumbnail{
+        justify-content: start;
+    }
+    .slider .list .item .content h2{
+        font-size: 2.8rem;
+    }
+    .slider .list .item .content1 h2{
+        font-size: 2.8rem;
+    }
+    .arrows{
+        top: 10%;
+    }
+    .slider .list .item .content{
+        font-size: 2rem;
+        top: 30%;
+    }
+    .slider .list .item .content1{
+        font-size: 2rem;
+        top: 23%;
+    }
+}
+@media screen and (max-width:400px) {
     .html{
         overflow: hidden;
     }
