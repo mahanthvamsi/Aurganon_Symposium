@@ -29,3 +29,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
         backVideo.play();
     }
 });
+
+
+
+
+const splash = document.querySelector('.splash');
+
+document.addEventListener('DOMContentLoaded', (e)=>{
+    setTimeout(()=>{
+        splash.classList.add('display-none');
+    },2000);
+})
+
+
+let imgContainer = document.querySelector(".img-container");
+setInterval(() => {
+let last = imgContainer.firstElementChild;
+last.remove();
+imgContainer.appendChild(last);
+}, 2500);

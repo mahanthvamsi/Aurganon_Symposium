@@ -140,6 +140,15 @@ span{
     text-transform: uppercase;
 
 }
+.home h2{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    letter-spacing: 30px;
+    font-family: "glitch2",sans-serif;
+    color: var(--text-color);
+
+}
 .home-img{
     align-self: center;
     border-radius: 50%;
@@ -168,17 +177,6 @@ span{
     font-weight: 500;
     max-width: 1000px;
 } */
-
-.soon h2{
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    font-size: 5rem;
-    color: var(--main-color);
-    margin-top:36rem;
-    letter-spacing: 8px;
-}
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -257,7 +255,7 @@ span{
     }
     41%,
     60%{
-        content: 'codethon            ';
+        content: 'Hackathon            ';
     }
     61%,
     80%{
@@ -298,7 +296,7 @@ span{
     overflow: hidden;
     position: relative;
     font-weight: 900;
-    height: 5rem;
+    height: 15rem;
 }
 .marquee span{
     display: inline-block;
@@ -306,6 +304,11 @@ span{
     font-size: larger;
     font-weight: 800;
     font-size: large;
+}
+.marquee img{
+    width:100px;
+    height: 100px;
+    margin-right: 12rem;
 }
 @keyframes marquee {
     0%{
@@ -319,8 +322,8 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
-    background: var(--second-bg-color);
+    gap: -18rem;
+    /* background: var(--second-bg-color); */
     color: white;
 }
 .about h2 span{
@@ -407,7 +410,7 @@ span{
     align-items: center;
     gap: 8.5rem;
     margin-left: 28%;
-    margin-left: 24rem;
+    margin-left: 40rem;
     
 }
 .events-box{
@@ -544,7 +547,16 @@ span{
     font-size: 16px;
     color: white;
 }
-
+.footer .contact a{
+    color: var(--main-color);
+}
+.footer .contact{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background: transparent;
+}
 @media(max-width:1285px){
     html{
         font-size: 55%;
@@ -644,7 +656,7 @@ span{
         grid-template-columns: repeat(1,1fr);
     }
 }
-@media(max-width: 480px) {
+@media(max-width: 490px) {
     html {
         font-size: 50%;
     }
@@ -670,11 +682,21 @@ span{
         padding: 8rem 5% 8rem;
     }
     .home-content .glitch{
-        font-size: 12px;
+        font-size: 11px;
         align-items: center;
-        margin-right: 18vw;
+        margin-right: 8rem;
         margin-bottom: 30vw;
-        letter-spacing: 4px;
+        letter-spacing: 5px;
+        
+    }
+    .home-content .glitch2{
+        font-size: 15px;
+        font-weight: 800;
+        align-items: center;
+        margin-right: 8rem;
+        margin-bottom: 30vw;
+        letter-spacing: 14px;
+        
     }
     .backVideo{
         width: auto;
@@ -689,25 +711,22 @@ span{
     .home-content h3{
         font-size: 1.5rem;
     }
+    .home-content h2{
+        margin-top: -12.8rem;
+    }
     .contact h2{
             margin-top: 3.5rem;
     }
     .home-content p{
         font-size: 1.5rem;
     }
-    .soon h2{
-        text-align: center;
-        width: auto;
-        height: auto;
-        font-size: 20px;
-        margin-top: 42rem;
-        font-weight: 700;
-        font-size: 3rem;
-    }
-    
     .marquee{
-        height: 3rem;
-        background-color: var(--second-bg-color);
+        height:10rem;
+        
+    }
+    .marquee img{
+        height: 9rem;
+        width: 9rem;
     }
     .about{
         margin-top: 3rem;
@@ -783,6 +802,10 @@ span{
     
 }
 @media (max-width:380px) {
+    #menu-icon{
+        display: block;
+        margin-left: 20vW;
+    }
     .about-img img{
         display:flex;
         position: relative;
@@ -790,16 +813,15 @@ span{
         margin-top: -149vw;
         margin-right: 40vw;
     }
-    .soon h2{
-        text-align: center;
-        width: auto;
-        height: auto;
-        font-size: 20px;
-        margin-top: 42rem;
-        font-weight: 700;
-        font-size: 3rem;
+    .home-content .glitch{
+        letter-spacing: 4px;
     }
-    
+    .events-box{
+        margin-left: 11px;
+        margin-top: 20px;
+        height: 200px;
+        width: 90%;
+    }
 }
 .glitch {
     font-size: 6rem;
@@ -840,8 +862,82 @@ span{
 
     font-family: "glitch",sans-serif;
   }
+  .glitch2 {
+    font-size: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+  
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  
+    animation: glitch 500ms infinite;
+    font-family: "glitch",sans-serif;
+  }
+  
+  .glitch2 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "glitch",sans-serif;
+  }
+  
+  .glitch2 span:first-child {
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-0.025em, -0.0125em);
+    /* color: green; */
+    opacity: 0.8;
+    font-family: "glitch",sans-serif;
+  }
+  
+  .glitch2 span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+    transform: translate(0.0125em, 0.025em);
+    /* color: red; */
+    opacity: 0.8;
+
+    font-family: "glitch",sans-serif;
+  }
   
   @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    14% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+        0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    99% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+        0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    100% {
+      text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+  }
+  @keyframes glitch2 {
     0% {
       text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
         -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
@@ -890,4 +986,3 @@ span{
       transition-delay: 0s !important;
     }
   }
-  
