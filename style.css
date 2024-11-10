@@ -412,8 +412,8 @@ span {
 }
 
 .marquee img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 50px;
     margin-right: 12rem;
 }
 
@@ -441,55 +441,27 @@ span {
     text-shadow: 0 0 50px var(--main-color);
 }
 
-.img-container {
-    right: 5%;
-    top: 128%;
+.about-img {
+    border-radius: 50%;
+}
+
+.about-img img {
     position: absolute;
-    height: 250px;
-    width: 250px;
-    perspective: 430px;
-    transform-style: preserve-3d;
-  }
-  .box {
-    box-shadow: 0 0 10px var(--main-color);
-    width: 400px;
-    height: 250px;
-    border-radius: 25px;
-    overflow: hidden;
-    border: 1px solid var(--main-color);
-    position: absolute;
-    top: 50%;
-    transition: 1000ms ease-in-out;
-  }
-  .box img {
-    width: 100%;
-    height: 100%;
-  }
-  .box:first-of-type {
-    z-index: 5;
-    opacity: 0;
-    left: 15%;
-    transform: translate(-50%, -50%) rotateY(-10deg);
-  }
-  .box:nth-of-type(2) {
-    opacity: 1;
-    left: 20%;
-    transform: translate(-50%, -50%) rotateY(-10deg);
-    z-index: 5;
-  }
-  .box:nth-of-type(3) {
-    left: 25%;
-    opacity: 0.75;
-    color: #eee;
-    z-index: 10;
-    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-50px);
-  }
-  .box:nth-of-type(4) {
-    z-index: 5;
-    opacity: 0.5;
-    left:30%;
-    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-100px);
-  }
+    width: 25%;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    top: 90rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    align-items: right;
+    margin-left: 21rem;
+
+}
+
+.about-img img:hover {
+    box-shadow: 0 0 35px var(--main-color),
+        0 0 70px var(--main-color);
+}
 
 .heading {
     text-align: center;
@@ -958,8 +930,8 @@ span {
     }
 
     .marquee img {
-        height: 9rem;
-        width: 9rem;
+        height: 30px;
+        width: 130px;
     }
 
     .about {
